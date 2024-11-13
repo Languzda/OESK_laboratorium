@@ -55,7 +55,7 @@ K6 to narzędzie open-source do testów wydajnościowych i obciążeniowych apli
    ```
 
 - Stwórzy skrypt testowy który:
-  - Wykona dokładnie `100` zapytań
+  - Wykona dokładnie `100` zapytań z wykorzystaniem `1` vu
   - zapytania będą kierowane do `https://google.com`
   - odpowiedz na pytania:
       - jaki był średni czas trwania jednego zapytania?
