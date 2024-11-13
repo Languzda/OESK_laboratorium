@@ -54,6 +54,15 @@ K6 to narzędzie open-source do testów wydajnościowych i obciążeniowych apli
    };
    ```
 
+- Stwórzy skrypt testowy który:
+  - Wykona dokładnie `100` zapytań
+  - zapytania będą kierowane do `https://google.com`
+  - odpowiedz na pytania:
+      - jaki był średni czas trwania jednego zapytania?
+      - ile trwał czały test?
+   
+Tutaj znajdziesz więcej informacji na temat możliwych parametrów w [sekcji options](https://grafana.com/docs/k6/latest/using-k6/k6-options/reference/)
+
 2. **Funkcja `export default function`** – – Określa, jakie czynności wykona każdy wirtualny użytkownik podczas testu. Jest to główny blok logiki testu, gdzie definiujemy, jakie żądania są wysyłane oraz jakie warunki sprawdzamy za pomocą `check`;
 
    **Przykład `export default function`:**
@@ -138,7 +147,7 @@ export default function () {
 
 **Zadanie**:
 
-- Utwórz test w którym korzystjąc z danych testowych w `dataPosts.json` wyślesz conajmniej 3 zapytania POST do `https://jsonplaceholder.typicode.com/posts`, aby utworzyć nowe posty, następnie sprawdź czy status odpowiedzi to `200` czy w odpowiedzi znajduje się pole `id` oraz wypisz do konsoli jakie id (wartość `id`) dostał ten post.
+- Utwórz test w którym korzystjąc z danych testowych w `dataPosts.json` wyślesz conajmniej 10 zapytania POST do `https://jsonplaceholder.typicode.com/posts`, aby utworzyć nowe posty, następnie sprawdź czy status odpowiedzi to `200` czy w odpowiedzi znajduje się pole `id` oraz wypisz do konsoli jakie id (wartość `id`) dostał ten post. (możesz parę razy stworzyć ten sam post)
 
 # Zadania końcowe
 
